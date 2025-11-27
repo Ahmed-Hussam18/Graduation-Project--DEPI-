@@ -244,7 +244,7 @@ const Home = () => {
                     <Form.Range
                       min={0}
                       max={5}
-                      step={0.5}
+                      step={0.1}
                       value={minRating}
                       onChange={(e) => setMinRating(parseFloat(e.target.value))}
                       className="mt-2"
