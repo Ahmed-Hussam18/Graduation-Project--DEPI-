@@ -1,13 +1,13 @@
-import { createContext, useContext, useState, useEffect } from 'react';
-import { useAuth } from './AuthContext';
-import { cartAPI } from '../utils/api';
+import { createContext, useContext, useState, useEffect } from "react";
+import { useAuth } from "./AuthContext";
+import { cartAPI } from "../utils/api";
 
 const CartContext = createContext(null);
 
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
-    throw new Error('useCart must be used within CartProvider');
+    throw new Error("useCart must be used within CartProvider");
   }
   return context;
 };
@@ -32,7 +32,7 @@ export const CartProvider = ({ children }) => {
       const response = await cartAPI.getCart(user.id);
       setCartItems(response.data);
     } catch (error) {
-      console.error('Error loading cart:', error);
+      console.error("Error loading cart:", error);
     } finally {
       if (!silent) setLoading(false);
     }
@@ -57,43 +57,38 @@ export const CartProvider = ({ children }) => {
           quantity: existingItem.quantity + 1,
         });
       } else {
-        // For new items we can't easily be optimistic because we need the ID from the server
-        // But we can reload silently
         await cartAPI.addToCart({
           userId: user.id,
           productId: product.id,
           product: product,
           quantity: 1,
         });
-        loadCart(true); // Silent reload
+        loadCart(true);
       }
     } catch (error) {
-      console.error('Error adding to cart:', error);
-      loadCart(true); // Revert on error
+      console.error("Error adding to cart:", error);
+      loadCart(true);
     }
   };
 
   const updateQuantity = async (id, quantity) => {
     if (!user) return;
 
-    // Store previous state for rollback
     const previousItems = [...cartItems];
 
     try {
       if (quantity <= 0) {
         await removeFromCart(id);
       } else {
-        // Optimistic update
-        setCartItems(prev => prev.map(item =>
-          item.id === id ? { ...item, quantity } : item
-        ));
+        setCartItems((prev) =>
+          prev.map((item) => (item.id === id ? { ...item, quantity } : item))
+        );
 
         await cartAPI.updateCart(id, { quantity });
-        // No need to reload if successful, as local state is already updated
       }
     } catch (error) {
-      console.error('Error updating cart:', error);
-      setCartItems(previousItems); // Rollback
+      console.error("Error updating cart:", error);
+      setCartItems(previousItems);
     }
   };
 
@@ -103,24 +98,23 @@ export const CartProvider = ({ children }) => {
     const previousItems = [...cartItems];
 
     try {
-      // Optimistic update
-      setCartItems(prev => prev.filter(item => item.id !== id));
+      setCartItems((prev) => prev.filter((item) => item.id !== id));
 
       await cartAPI.removeFromCart(id);
     } catch (error) {
-      console.error('Error removing from cart:', error);
-      setCartItems(previousItems); // Rollback
+      console.error("Error removing from cart:", error);
+      setCartItems(previousItems);
     }
   };
 
   const clearCart = async () => {
     if (!user) return;
     try {
-      setCartItems([]); // Optimistic clear
+      setCartItems([]);
       await cartAPI.clearCart(user.id);
     } catch (error) {
-      console.error('Error clearing cart:', error);
-      loadCart(true); // Reload if failed
+      console.error("Error clearing cart:", error);
+      loadCart(true);
     }
   };
 
@@ -147,4 +141,3 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
-

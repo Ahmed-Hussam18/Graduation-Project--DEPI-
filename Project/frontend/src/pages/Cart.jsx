@@ -31,7 +31,6 @@ const Cart = () => {
   const handleCheckout = async () => {
     if (!user || cartItems.length === 0) return;
 
-    // Validate stock before proceeding
     for (const item of cartItems) {
       if (item.quantity > item.product.stock) {
         toast.error(
@@ -63,7 +62,6 @@ const Cart = () => {
       const response = await ordersAPI.createOrder(order);
       console.log("Order created successfully:", response.data);
 
-      // Update stock for each item
       for (const item of cartItems) {
         try {
           const { data: product } = await productsAPI.getById(item.productId);
@@ -75,7 +73,10 @@ const Cart = () => {
             });
           }
         } catch (err) {
-          console.error(`Failed to update stock for product ${item.productId}`, err);
+          console.error(
+            `Failed to update stock for product ${item.productId}`,
+            err
+          );
         }
       }
 

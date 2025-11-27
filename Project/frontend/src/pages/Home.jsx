@@ -30,7 +30,6 @@ const Home = () => {
     loadProducts();
   }, []);
 
-  // Debounce price range changes
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedPriceRange(priceRange);
@@ -38,7 +37,6 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, [priceRange]);
 
-  // Debounce rating changes
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedMinRating(minRating);
