@@ -1,0 +1,553 @@
+{
+  "users": [
+    {
+      "email": "medo1962006@gmail.com",
+      "password": "$2a$10$X/09o0K4FC/hXbowxn9iZer7IPepAGW.jqcCGmoavbKmaq7/e5eY2",
+      "name": "Ahmed",
+      "id": 1,
+      "phone": "",
+      "address": ""
+    },
+    {
+      "email": "fouda1962006@gmail.com",
+      "password": "$2a$10$mLINPa.VMCcllQWE0PpCfemWDtuDZ7XSA8S/okggZL1HftaT3awhC",
+      "name": "Omar",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "category": "Smartphones",
+      "price": 999,
+      "rating": 4.8,
+      "image": "/images/iphone-15-pro.png",
+      "description": "Latest iPhone with A17 Pro chip and titanium design",
+      "stock": 48,
+      "specs": {
+        "Display": "6.1-inch Super Retina XDR",
+        "Processor": "A17 Pro chip",
+        "Camera": "48MP Main | Ultra Wide | Telephoto",
+        "Battery": "Up to 23 hours video playback",
+        "Storage": "128GB / 256GB / 512GB / 1TB"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S24",
+      "category": "Smartphones",
+      "price": 899,
+      "rating": 4.7,
+      "image": "/images/samsung-s24.png",
+      "description": "Premium Android smartphone with AI features",
+      "stock": 44,
+      "specs": {
+        "Display": "6.2-inch Dynamic AMOLED 2X",
+        "Processor": "Snapdragon 8 Gen 3",
+        "Camera": "50MP Wide | 12MP Ultra Wide | 10MP Telephoto",
+        "Battery": "4000mAh",
+        "Storage": "128GB / 256GB / 512GB"
+      }
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro 16\"",
+      "category": "Laptops",
+      "price": 2499,
+      "rating": 4.9,
+      "image": "/images/macbook-pro-16.png",
+      "description": "Powerful laptop with M3 Pro chip",
+      "stock": 28,
+      "specs": {
+        "Display": "16.2-inch Liquid Retina XDR",
+        "Processor": "Apple M3 Pro",
+        "Memory": "18GB / 36GB Unified Memory",
+        "Storage": "512GB / 1TB SSD",
+        "Battery": "Up to 22 hours"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS 15",
+      "category": "Laptops",
+      "price": 1799,
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Dell_XPS_15_%282017%29.png",
+      "description": "High-performance Windows laptop",
+      "stock": 35,
+      "specs": {
+        "Display": "15.6-inch OLED 3.5K",
+        "Processor": "Intel Core i7-13700H",
+        "Memory": "16GB / 32GB DDR5",
+        "Storage": "512GB / 1TB NVMe SSD",
+        "Graphics": "NVIDIA GeForce RTX 4050"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sony WH-1000XM5",
+      "category": "Audio",
+      "price": 399,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=500",
+      "description": "Premium noise-cancelling headphones",
+      "stock": 60,
+      "specs": {
+        "Type": "Over-ear",
+        "Noise Cancellation": "Industry-leading ANC",
+        "Battery Life": "Up to 30 hours",
+        "Connectivity": "Bluetooth 5.2",
+        "Weight": "250g"
+      }
+    },
+    {
+      "id": 6,
+      "name": "AirPods Pro",
+      "category": "Audio",
+      "price": 249,
+      "rating": 4.7,
+      "image": "/images/airpods-pro.png",
+      "description": "Wireless earbuds with active noise cancellation",
+      "stock": 80,
+      "specs": {
+        "Type": "In-ear",
+        "Chip": "H2 Headphone Chip",
+        "Battery Life": "Up to 6 hours listening time",
+        "Case": "MagSafe Charging Case (USB-C)",
+        "Water Resistance": "IP54"
+      }
+    },
+    {
+      "id": 7,
+      "name": "iPad Pro 12.9\"",
+      "category": "Tablets",
+      "price": 1099,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
+      "description": "Professional tablet with M2 chip",
+      "stock": 40,
+      "specs": {
+        "Display": "12.9-inch Liquid Retina XDR",
+        "Processor": "Apple M2 chip",
+        "Storage": "128GB - 2TB",
+        "Camera": "12MP Wide | 10MP Ultra Wide",
+        "Connectivity": "Wi-Fi 6E + 5G"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Google Pixel Tablet",
+      "category": "Tablets",
+      "price": 499,
+      "rating": 4.5,
+      "image": "https://i.ebayimg.com/images/g/Up4AAeSwgu9or7l2/s-l1600.webp",
+      "description": "Versatile tablet with charging speaker dock",
+      "stock": 50,
+      "specs": {
+        "Display": "11-inch LCD",
+        "Processor": "Google Tensor G2",
+        "Storage": "128GB / 256GB",
+        "Battery": "27Wh",
+        "Pen": "USI 2.0 stylus support"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Nintendo Switch OLED",
+      "category": "Gaming",
+      "price": 349,
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+      "description": "Gaming console with OLED display",
+      "stock": 70,
+      "specs": {
+        "Display": "7-inch OLED screen",
+        "Storage": "64GB internal storage",
+        "Modes": "TV, Tabletop, Handheld",
+        "Battery": "4.5 - 9 hours",
+        "Dock": "Wired LAN port"
+      }
+    },
+    {
+      "id": 10,
+      "name": "PlayStation 5",
+      "category": "Gaming",
+      "price": 499,
+      "rating": 4.9,
+      "image": "/images/ps5.png",
+      "description": "Next-gen gaming console",
+      "stock": 25,
+      "specs": {
+        "CPU": "x86-64-AMD Ryzen Zen 2",
+        "GPU": "AMD Radeon RDNA 2",
+        "Storage": "825GB SSD",
+        "Resolution": "Up to 8K / 4K 120Hz",
+        "Drive": "Ultra HD Blu-ray"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Xbox Series X",
+      "category": "Gaming",
+      "price": 499,
+      "rating": 4.8,
+      "image": "/images/xbox-series-x.png",
+      "description": "Powerful gaming console",
+      "stock": 30,
+      "specs": {
+        "CPU": "8X Cores @ 3.8 GHz Custom Zen 2",
+        "GPU": "12 TFLOPS Custom RDNA 2",
+        "Storage": "1TB NVMe SSD",
+        "Resolution": "True 4K Gaming",
+        "FPS": "Up to 120 FPS"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Apple Watch Series 9",
+      "category": "Wearables",
+      "price": 399,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500",
+      "description": "Advanced smartwatch with health features",
+      "stock": 55,
+      "specs": {
+        "Case Size": "41mm or 45mm",
+        "Display": "Always-On Retina display",
+        "Chip": "S9 SiP",
+        "Health": "Blood Oxygen, ECG",
+        "Water Resistance": "50m"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Samsung Galaxy Watch 6",
+      "category": "Wearables",
+      "price": 299,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500",
+      "description": "Feature-rich smartwatch",
+      "stock": 50,
+      "specs": {
+        "Size": "40mm or 44mm",
+        "Display": "Super AMOLED",
+        "Battery": "Up to 40 hours",
+        "Health": "BioActive Sensor",
+        "OS": "Wear OS"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Canon EOS R5",
+      "category": "Cameras",
+      "price": 3899,
+      "rating": 4.9,
+      "image": "/images/canon-r5.png",
+      "description": "Professional mirrorless camera",
+      "stock": 15,
+      "specs": {
+        "Sensor": "45MP Full-Frame CMOS",
+        "Video": "8K RAW Video",
+        "Stabilization": "In-body 5-axis",
+        "ISO": "100-51200",
+        "Slots": "CFexpress & SD UHS-II"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Sony A7 IV",
+      "category": "Cameras",
+      "price": 2499,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500",
+      "description": "Full-frame mirrorless camera",
+      "stock": 20,
+      "specs": {
+        "Sensor": "33MP Full-Frame Exmor R",
+        "Video": "4K 60p",
+        "Autofocus": "Real-time Eye AF",
+        "ISO": "100-51200",
+        "Screen": "Vari-angle LCD"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Google Pixel 8 Pro",
+      "category": "Smartphones",
+      "price": 999,
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Google_Pixel_8_Pro.jpg",
+      "description": "AI-powered smartphone with advanced camera",
+      "stock": 40,
+      "specs": {
+        "Display": "6.7-inch Super Actua",
+        "Processor": "Google Tensor G3",
+        "Camera": "50MP Main | 48MP Ultra Wide | 48MP Telephoto",
+        "Battery": "5050mAh",
+        "AI": "Gemini Nano built-in"
+      }
+    },
+    {
+      "id": 17,
+      "name": "OnePlus 12",
+      "category": "Smartphones",
+      "price": 799,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?w=500",
+      "description": "Flagship Android phone with fast charging",
+      "stock": 35,
+      "specs": {
+        "Display": "6.82-inch ProXDR",
+        "Processor": "Snapdragon 8 Gen 3",
+        "Charging": "100W SUPERVOOC",
+        "Battery": "5400mAh",
+        "Camera": "Hasselblad Camera for Mobile"
+      }
+    },
+    {
+      "id": 18,
+      "name": "HP Spectre x360",
+      "category": "Laptops",
+      "price": 1299,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=500",
+      "description": "2-in-1 convertible laptop",
+      "stock": 25,
+      "specs": {
+        "Display": "14-inch 2.8K OLED Touch",
+        "Processor": "Intel Core Ultra 7",
+        "Memory": "16GB LPDDR5x",
+        "Storage": "1TB PCIe Gen4 SSD",
+        "Design": "Convertible 2-in-1"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "category": "Laptops",
+      "price": 1599,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500",
+      "description": "Business ultrabook with premium build",
+      "stock": 30,
+      "specs": {
+        "Display": "14-inch WUXGA Low Power",
+        "Processor": "Intel Core i7 vPro",
+        "Weight": "Starting at 1.12kg",
+        "Durability": "MIL-STD 810H",
+        "Security": "Fingerprint Reader, ThinkShield"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Bose QuietComfort 45",
+      "category": "Audio",
+      "price": 329,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500",
+      "description": "Premium noise-cancelling headphones",
+      "stock": 55,
+      "specs": {
+        "Type": "Over-ear",
+        "Noise Cancellation": "Acoustic Noise Cancelling",
+        "Battery Life": "24 hours",
+        "Charging": "USB-C, 15 min for 3 hours",
+        "Comfort": "Plush synthetic leather"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Samsung Galaxy Buds Pro",
+      "category": "Audio",
+      "price": 199,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1610438235354-a6ae5528385c?w=500",
+      "description": "Wireless earbuds with active noise cancellation",
+      "stock": 70,
+      "specs": {
+        "Type": "In-ear",
+        "Sound": "2-way speakers with AKG",
+        "ANC": "Intelligent Active Noise Cancellation",
+        "Water Resistance": "IPX7",
+        "Battery": "Up to 18 hours with case"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Microsoft Surface Pro 9",
+      "category": "Tablets",
+      "price": 999,
+      "rating": 4.5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Surface_Pro_9_in_Sapphire_colour.jpg",
+      "description": "2-in-1 tablet with detachable keyboard",
+      "stock": 45,
+      "specs": {
+        "Display": "13-inch PixelSense Flow",
+        "Processor": "Intel Core i5 / i7",
+        "Kickstand": "Adjustable built-in kickstand",
+        "Accessories": "Compatible with Surface Keyboard",
+        "OS": "Windows 11 Home"
+      }
+    },
+    {
+      "id": 23,
+      "name": "iPad Air",
+      "category": "Tablets",
+      "price": 599,
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/IPad_Air_5th_Generation_2024.jpg",
+      "description": "Lightweight tablet with M2 chip",
+      "stock": 60,
+      "specs": {
+        "Display": "10.9-inch Liquid Retina",
+        "Processor": "Apple M1 chip",
+        "Camera": "12MP Wide back, 12MP Ultra Wide front",
+        "Touch ID": "Integrated into top button",
+        "Connectivity": "Wi-Fi 6"
+      }
+    },
+    {
+      "id": 24,
+      "name": "PlayStation 4",
+      "category": "Gaming",
+      "price": 299,
+      "rating": 4.6,
+      "image": "https://i.ebayimg.com/images/g/PtAAAOSwDU5itvy7/s-l1600.webp",
+      "description": "Powerful gaming console with exclusive titles",
+      "stock": 35,
+      "specs": {
+        "Processor": "AMD x86-64 Jaguar",
+        "GPU": "AMD Radeon",
+        "Storage": "500GB / 1TB SSD",
+        "Resolution": "Up to 4K",
+        "Media": "Blu-ray & DVD Drive"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Nikon Z6 III",
+      "category": "Cameras",
+      "price": 2499,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1519638831568-d9897f54ed69?w=500",
+      "description": "Professional mirrorless camera",
+      "stock": 18,
+      "specs": {
+        "Sensor": "24.5MP BSI CMOS",
+        "Video": "4K UHD 60p",
+        "EVF": "3.69m-dot OLED",
+        "ISO": "100-51200",
+        "Slots": "Dual Card Slots"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Fitbit Charge 6",
+      "category": "Wearables",
+      "price": 159,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500",
+      "description": "Advanced fitness tracker",
+      "stock": 80,
+      "specs": {
+        "Sensors": "Heart rate, GPS, SpO2",
+        "Modes": "40+ Exercise Modes",
+        "Google": "Maps & Wallet built-in",
+        "Battery": "Up to 7 days",
+        "Water Resistance": "50m"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Rolex Submariner",
+      "category": "Wearables",
+      "price": 10999,
+      "rating": 4.9,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Rolex-Submariner.jpg",
+      "description": "Iconic luxury dive watch",
+      "stock": 5,
+      "specs": {
+        "Case": "41mm Oystersteel",
+        "Movement": "Perpetual, mechanical, self-winding",
+        "Water Resistance": "300m / 1000ft",
+        "Bezel": "Unidirectional rotatable Cerachrom",
+        "Crystal": "Scratch-resistant sapphire"
+      }
+    },
+    {
+      "id": 28,
+      "name": "DJI Mini 4 Pro",
+      "category": "Cameras",
+      "price": 759,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=500",
+      "description": "Compact drone with 4K camera",
+      "stock": 15,
+      "specs": {
+        "Weight": "Under 249g",
+        "Camera": "4K/60fps HDR",
+        "Sensing": "Omnidirectional Obstacle Sensing",
+        "Transmission": "20km FHD Video",
+        "Flight Time": "34-min Max Flight Time"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Logitech MX Master 3S",
+      "category": "Accessories",
+      "price": 99,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500",
+      "description": "Premium wireless mouse",
+      "stock": 100,
+      "specs": {
+        "DPI": "8000 DPI Sensor",
+        "Clicks": "Quiet Clicks",
+        "Scroll": "MagSpeed Electromagnetic",
+        "Connectivity": "Bluetooth & Logi Bolt",
+        "Compatibility": "Multi-OS"
+      }
+    },
+    {
+      "id": 30,
+      "name": "Keychron K8 Pro",
+      "category": "Accessories",
+      "price": 119,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?w=500",
+      "description": "Mechanical keyboard with RGB",
+      "stock": 50,
+      "specs": {
+        "Layout": "Tenkeyless (80%)",
+        "Switch": "Hot-swappable",
+        "Connectivity": "Wireless & Wired",
+        "Support": "QMK/VIA Support",
+        "Keycaps": "Double-shot PBT"
+      }
+    }
+  ],
+  "carts": [],
+  "favourites": [],
+  "orders": [],
+  "reviews": [
+    {
+      "userId": 1,
+      "productId": 2,
+      "userName": "Ahmed",
+      "rating": 3,
+      "comment": "great phone ngl",
+      "date": "2025-11-22T16:24:52.458Z",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "userName": "Ahmed",
+      "rating": 3,
+      "comment": "great phone",
+      "date": "2025-11-22T20:31:41.187Z",
+      "id": 2
+    }
+  ]
+}

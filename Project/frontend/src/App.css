@@ -1,0 +1,40 @@
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image {
+  object-fit: cover;
+  height: 200px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+  border-right: none;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: #0d6efd;
+}
+
+.form-range::-moz-range-thumb {
+  background-color: #0d6efd;
+}
