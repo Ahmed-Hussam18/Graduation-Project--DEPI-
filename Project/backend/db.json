@@ -24,7 +24,7 @@
       "rating": 4.8,
       "image": "/images/iphone-15-pro.png",
       "description": "Latest iPhone with A17 Pro chip and titanium design",
-      "stock": 48,
+      "stock": 47,
       "specs": {
         "Display": "6.1-inch Super Retina XDR",
         "Processor": "A17 Pro chip",
@@ -41,7 +41,7 @@
       "rating": 4.7,
       "image": "/images/samsung-s24.png",
       "description": "Premium Android smartphone with AI features",
-      "stock": 44,
+      "stock": 42,
       "specs": {
         "Display": "6.2-inch Dynamic AMOLED 2X",
         "Processor": "Snapdragon 8 Gen 3",
@@ -58,7 +58,7 @@
       "rating": 4.9,
       "image": "/images/macbook-pro-16.png",
       "description": "Powerful laptop with M3 Pro chip",
-      "stock": 28,
+      "stock": 26,
       "specs": {
         "Display": "16.2-inch Liquid Retina XDR",
         "Processor": "Apple M3 Pro",
@@ -75,7 +75,7 @@
       "rating": 4.6,
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Dell_XPS_15_%282017%29.png",
       "description": "High-performance Windows laptop",
-      "stock": 35,
+      "stock": 34,
       "specs": {
         "Display": "15.6-inch OLED 3.5K",
         "Processor": "Intel Core i7-13700H",
