@@ -1,20 +1,5 @@
 {
-  "users": [
-    {
-      "email": "medo1962006@gmail.com",
-      "password": "$2a$10$X/09o0K4FC/hXbowxn9iZer7IPepAGW.jqcCGmoavbKmaq7/e5eY2",
-      "name": "Ahmed",
-      "id": 1,
-      "phone": "",
-      "address": ""
-    },
-    {
-      "email": "fouda1962006@gmail.com",
-      "password": "$2a$10$mLINPa.VMCcllQWE0PpCfemWDtuDZ7XSA8S/okggZL1HftaT3awhC",
-      "name": "Omar",
-      "id": 2
-    }
-  ],
+  "users": [],
   "products": [
     {
       "id": 1,
@@ -24,7 +9,7 @@
       "rating": 4.8,
       "image": "/images/iphone-15-pro.png",
       "description": "Latest iPhone with A17 Pro chip and titanium design",
-      "stock": 47,
+      "stock": 44,
       "specs": {
         "Display": "6.1-inch Super Retina XDR",
         "Processor": "A17 Pro chip",
@@ -41,7 +26,7 @@
       "rating": 4.7,
       "image": "/images/samsung-s24.png",
       "description": "Premium Android smartphone with AI features",
-      "stock": 42,
+      "stock": 34,
       "specs": {
         "Display": "6.2-inch Dynamic AMOLED 2X",
         "Processor": "Snapdragon 8 Gen 3",
@@ -58,7 +43,7 @@
       "rating": 4.9,
       "image": "/images/macbook-pro-16.png",
       "description": "Powerful laptop with M3 Pro chip",
-      "stock": 26,
+      "stock": 24,
       "specs": {
         "Display": "16.2-inch Liquid Retina XDR",
         "Processor": "Apple M3 Pro",
@@ -75,7 +60,7 @@
       "rating": 4.6,
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/Dell_XPS_15_%282017%29.png",
       "description": "High-performance Windows laptop",
-      "stock": 34,
+      "stock": 32,
       "specs": {
         "Display": "15.6-inch OLED 3.5K",
         "Processor": "Intel Core i7-13700H",
@@ -109,7 +94,7 @@
       "rating": 4.7,
       "image": "/images/airpods-pro.png",
       "description": "Wireless earbuds with active noise cancellation",
-      "stock": 80,
+      "stock": 79,
       "specs": {
         "Type": "In-ear",
         "Chip": "H2 Headphone Chip",
@@ -126,7 +111,7 @@
       "rating": 4.8,
       "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
       "description": "Professional tablet with M2 chip",
-      "stock": 40,
+      "stock": 39,
       "specs": {
         "Display": "12.9-inch Liquid Retina XDR",
         "Processor": "Apple M2 chip",
@@ -143,7 +128,7 @@
       "rating": 4.5,
       "image": "https://i.ebayimg.com/images/g/Up4AAeSwgu9or7l2/s-l1600.webp",
       "description": "Versatile tablet with charging speaker dock",
-      "stock": 50,
+      "stock": 49,
       "specs": {
         "Display": "11-inch LCD",
         "Processor": "Google Tensor G2",
@@ -530,24 +515,5 @@
   "carts": [],
   "favourites": [],
   "orders": [],
-  "reviews": [
-    {
-      "userId": 1,
-      "productId": 2,
-      "userName": "Ahmed",
-      "rating": 3,
-      "comment": "great phone ngl",
-      "date": "2025-11-22T16:24:52.458Z",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "userName": "Ahmed",
-      "rating": 3,
-      "comment": "great phone",
-      "date": "2025-11-22T20:31:41.187Z",
-      "id": 2
-    }
-  ]
+  "reviews": []
 }
