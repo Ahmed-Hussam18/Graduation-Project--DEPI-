@@ -55,6 +55,7 @@ const Home = () => {
     sortBy,
   ]);
 
+  // Fetches all products from the API and initializes state.
   const loadProducts = async () => {
     try {
       const response = await productsAPI.getAll();
@@ -67,6 +68,7 @@ const Home = () => {
     }
   };
 
+  // Applies search, category, price, rating and sorting filters to products.
   const filterProducts = () => {
     let filtered = [...products];
 

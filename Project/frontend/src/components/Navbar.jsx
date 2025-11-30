@@ -10,11 +10,13 @@ const NavigationBar = () => {
   const { favourites } = useFavourites();
   const navigate = useNavigate();
 
+  // Logs out the current user and redirects to the login page.
   const handleLogout = () => {
     logout();
     navigate("/login");
   };
 
+  // Derived counts for badges shown in the nav.
   const cartCount = cartItems?.length || 0;
   const favouritesCount = favourites?.length || 0;
 

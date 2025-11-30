@@ -30,6 +30,7 @@ export const FavouritesProvider = ({ children }) => {
     }
   }, [user]);
 
+  // Loads favourites for the current user. `silent` suppresses loading state.
   const loadFavourites = async (silent = false) => {
     if (!user) return;
     if (!silent) setLoading(true);
@@ -43,6 +44,7 @@ export const FavouritesProvider = ({ children }) => {
     }
   };
 
+  // Adds product to favourites using an optimistic temporary item until server response.
   const addToFavourites = async (product) => {
     if (!user) return;
 
@@ -84,6 +86,7 @@ export const FavouritesProvider = ({ children }) => {
     }
   };
 
+  // Removes a favourite locally and on the server (reverts on error).
   const removeFromFavourites = async (id) => {
     if (!user) return;
 

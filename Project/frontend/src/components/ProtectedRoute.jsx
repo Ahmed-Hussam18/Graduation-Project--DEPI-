@@ -1,6 +1,7 @@
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
+// Protects routes: shows loader while auth state resolves, redirects unauthenticated users.
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
 
@@ -16,4 +17,3 @@ const ProtectedRoute = ({ children }) => {
 };
 
 export default ProtectedRoute;
-

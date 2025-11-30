@@ -27,6 +27,7 @@ const Reviews = ({ productId }) => {
     }
   }, [productId, user]);
 
+  // Loads all reviews for the current product.
   const loadReviews = async () => {
     try {
       const response = await reviewsAPI.getReviews(productId);
@@ -38,6 +39,7 @@ const Reviews = ({ productId }) => {
     }
   };
 
+  // Checks if the current user already wrote a review for this product.
   const checkUserReview = async () => {
     try {
       const response = await reviewsAPI.getUserReview(user.id, productId);
@@ -53,6 +55,7 @@ const Reviews = ({ productId }) => {
     }
   };
 
+  // Creates or updates the user's review for the product.
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!user) {
@@ -91,6 +94,7 @@ const Reviews = ({ productId }) => {
     }
   };
 
+  // Deletes the specified review after user confirmation.
   const handleDelete = async (reviewId) => {
     if (!window.confirm("Are you sure you want to delete your review?")) {
       return;

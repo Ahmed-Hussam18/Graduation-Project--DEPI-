@@ -25,6 +25,7 @@ export const CartProvider = ({ children }) => {
     }
   }, [user]);
 
+  // Fetches cart items for the current user. `silent` avoids toggling the loading state.
   const loadCart = async (silent = false) => {
     if (!user) return;
     if (!silent) setLoading(true);
@@ -38,6 +39,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Adds a product to the cart. If item exists, increments quantity (optimistic update).
   const addToCart = async (product) => {
     if (!user) return;
     try {
@@ -71,6 +73,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Updates quantity for a cart item; removes item when quantity <= 0.
   const updateQuantity = async (id, quantity) => {
     if (!user) return;
 
@@ -92,6 +95,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Removes an item from the cart and attempts server deletion.
   const removeFromCart = async (id) => {
     if (!user) return;
 
@@ -107,6 +111,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Clears all items for the current user's cart on server and locally.
   const clearCart = async () => {
     if (!user) return;
     try {
@@ -118,6 +123,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  // Computes total cart price from items and quantities.
   const getTotalPrice = () => {
     return cartItems.reduce(
       (total, item) => total + item.product.price * item.quantity,

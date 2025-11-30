@@ -24,6 +24,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }, []);
 
+  // Sends credentials to the API, stores token+user on success.
   const login = async (email, password) => {
     try {
       const response = await authAPI.login(email, password);
@@ -47,6 +48,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Registers a new user via the API and stores token+user on success.
   const register = async (email, password, name) => {
     try {
       const response = await authAPI.register(email, password, name);
@@ -73,6 +75,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Clears local auth state and token.
   const logout = () => {
     authAPI.logout();
     setUser(null);

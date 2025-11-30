@@ -52,6 +52,7 @@ const Profile = () => {
     loadOrders();
   }, [user, navigate]);
 
+  // Fetches the current user's orders and updates orders state.
   const loadOrders = async () => {
     if (!user) return;
     try {
@@ -65,6 +66,7 @@ const Profile = () => {
     }
   };
 
+  // Updates local form state when profile inputs change.
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -73,6 +75,7 @@ const Profile = () => {
     }));
   };
 
+  // Sends updated profile data to the API and refreshes stored user data.
   const handleProfileUpdate = async (e) => {
     e.preventDefault();
     if (!user) return;
@@ -92,11 +95,13 @@ const Profile = () => {
     }
   };
 
+  // Opens the cancel modal for the selected order.
   const handleCancelOrder = (order) => {
     setOrderToCancel(order);
     setShowCancelModal(true);
   };
 
+  // Confirms order cancellation via API and refreshes orders.
   const confirmCancelOrder = async () => {
     if (!orderToCancel) return;
 
@@ -115,6 +120,7 @@ const Profile = () => {
     }
   };
 
+  // Deletes an order after confirmation and refreshes orders list.
   const handleDeleteOrder = async (orderId) => {
     if (
       !window.confirm(
@@ -134,6 +140,7 @@ const Profile = () => {
     }
   };
 
+  // Returns a styled badge element for a given order status string.
   const getOrderStatusBadge = (status) => {
     const statusMap = {
       pending: { variant: "warning", text: "Pending" },

@@ -1,12 +1,14 @@
-import { Container, Row, Col, Card, Button, Alert } from 'react-bootstrap';
-import { useAuth } from '../context/AuthContext';
-import { useFavourites } from '../context/FavouritesContext';
-import { Link } from 'react-router-dom';
-import ProductCard from '../components/ProductCard';
+import { Container, Row, Col, Card, Button, Alert } from "react-bootstrap";
+import { useAuth } from "../context/AuthContext";
+import { useFavourites } from "../context/FavouritesContext";
+import { Link } from "react-router-dom";
+import ProductCard from "../components/ProductCard";
 
 const Favourites = () => {
   const { user } = useAuth();
   const { favourites, loading } = useFavourites();
+
+  // Renders the user's favourite products; redirects to login if unauthenticated.
 
   if (!user) {
     return (
@@ -59,4 +61,3 @@ const Favourites = () => {
 };
 
 export default Favourites;
-

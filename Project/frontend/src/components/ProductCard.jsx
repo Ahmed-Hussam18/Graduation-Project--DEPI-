@@ -9,15 +9,18 @@ const ProductCard = ({ product }) => {
   const { addToCart, cartItems } = useCart();
   const { addToFavourites, removeFromFavourites, favourites } = useFavourites();
 
+  // Whether this product is already in the user's cart/favourites.
   const isInCart = cartItems?.some((item) => item.productId === product.id);
   const isFavourite = favourites?.some((fav) => fav.productId === product.id);
 
+  // Adds product to cart if user is authenticated.
   const handleAddToCart = () => {
     if (user) {
       addToCart(product);
     }
   };
 
+  // Toggles favourite state (optimistic UI). Prevents default link navigation.
   const handleFavouriteToggle = (e) => {
     e.preventDefault();
     e.currentTarget.blur();

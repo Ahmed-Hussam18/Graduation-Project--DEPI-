@@ -32,6 +32,7 @@ const ProductDetail = () => {
     loadProduct();
   }, [id]);
 
+  // Loads product details and related products by product id.
   const loadProduct = async () => {
     try {
       const response = await productsAPI.getById(id);
@@ -57,6 +58,7 @@ const ProductDetail = () => {
   const isInCart = cartItems?.some((item) => item.productId === product?.id);
   const isFavourite = favourites?.some((fav) => fav.productId === product?.id);
 
+  // Adds the current product to the cart, or redirects to login if unauthenticated.
   const handleAddToCart = () => {
     if (user) {
       addToCart(product);
@@ -67,6 +69,7 @@ const ProductDetail = () => {
     }
   };
 
+  // Toggles favourite status for the product; redirects to login if needed.
   const handleFavouriteToggle = () => {
     if (user) {
       if (isFavourite) {
