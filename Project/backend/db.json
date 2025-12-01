@@ -1,9 +1,16 @@
 {
   "users": [
     {
+      "email": "test1764628381998@example.com",
+      "password": "$2a$10$L1GcRGwU4GqBTtJNRwHKYOMTP7mH/Svqz3wevPp1l8yXcDC5SnH46",
+      "name": "Updated Name 2",
+      "id": 1,
+      "phone": "0987654321"
+    },
+    {
       "email": "medo1962006@gmail.com",
       "password": "$2a$10$F4szTulxorb/EAv9YAtt6ugjq/2bpTo8lz4g9FGZAxBVo4b1flG26",
-      "name": "Hassan",
+      "name": "Ahmed",
       "id": 2,
       "phone": "",
       "address": ""
