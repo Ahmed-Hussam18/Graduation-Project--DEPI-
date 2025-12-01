@@ -19,7 +19,7 @@ import { toast } from "react-toastify";
 import { userAPI, ordersAPI } from "../utils/api";
 
 const Profile = () => {
-  const { user, logout } = useAuth();
+  const { user, logout, updateUser } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("profile");
   const [loading, setLoading] = useState(false);
@@ -85,8 +85,7 @@ const Profile = () => {
       await userAPI.updateUser(user.id, formData);
       toast.success("Profile updated successfully!");
       const updatedUser = { ...user, ...formData };
-      localStorage.setItem("user", JSON.stringify(updatedUser));
-      window.location.reload();
+      updateUser(updatedUser);
     } catch (error) {
       toast.error("Failed to update profile. Please try again.");
       console.error("Error updating profile:", error);
