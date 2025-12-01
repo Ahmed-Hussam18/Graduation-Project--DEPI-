@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "medo1962006@gmail.com",
+      "password": "$2a$10$F4szTulxorb/EAv9YAtt6ugjq/2bpTo8lz4g9FGZAxBVo4b1flG26",
+      "name": "Hassan",
+      "id": 2,
+      "phone": "",
+      "address": ""
+    }
+  ],
   "products": [
     {
       "id": 1,
