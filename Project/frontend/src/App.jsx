@@ -1,18 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import { AuthProvider } from './context/AuthContext';
-import { CartProvider } from './context/CartContext';
-import { FavouritesProvider } from './context/FavouritesContext';
-import Navbar from './components/Navbar';
-import ProtectedRoute from './components/ProtectedRoute';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import Cart from './pages/Cart';
-import Favourites from './pages/Favourites';
-import ProductDetail from './pages/ProductDetail';
-import Profile from './pages/Profile';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import { AuthProvider } from "./context/AuthContext";
+import { CartProvider } from "./context/CartContext";
+import { FavouritesProvider } from "./context/FavouritesContext";
+import Navbar from "./components/Navbar";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Cart from "./pages/Cart";
+import Favourites from "./pages/Favourites";
+import ProductDetail from "./pages/ProductDetail";
+import Profile from "./pages/Profile";
+import Footer from "./components/Footer.jsx";
+import "./App.css";
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
               pauseOnHover
               theme="light"
             />
+            <Footer />
           </Router>
         </FavouritesProvider>
       </CartProvider>
